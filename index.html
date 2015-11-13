@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Test Angular & Node</title>
+  <link rel="stylesheet" href="app/style/index.css">
+  <!-- angular-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+  <!--controllers angular-->
+  <script src="app/controllers/appCtrl.js"></script>
+  <script src="app/controllers/registerCtrl.js"></script>
+  <!--models angular-->
+  <script src="app/models/app.js"></script>
+</head>
+<body ng-app="app" ng-controller="appCtrl">
+	<h1>Welcome : {{msg}}</h1>
+	<form>
+		<input type="text" value="user"/>
+		<input type="password" value="password"/>
+		<input type="submit" value="Sign in"/>
+	</form>
+	<div class="" ng-click=go('register')>
+		<button>Sign up</button>
+	<div>
+</body>
+</html>
